@@ -1,0 +1,26 @@
+WRITE AHEAD LOGGING
+Impelementation of WAL with a maximum of 100 files in the log before the committed files are written onto disk
+
+SECURITY
+Writing the insert statements in the following format protects against SQL inection attacks
+Example:
+
+c.execute("INSERT INTO employees VALUES (?, ?, ?)", (emp1.first, emp1.last, emp1.cost))
+
+NORMALIZATION
+The tables are in third normal form 
+Rows uniquely identified
+Single values in each cell
+Entries in column are the same type
+All attributes are dependent on the key 
+Compound tables are used show transactions i.e the seller, the agent and the office of the agent in the housescompund table  
+All fields can only be determined by the key in the table and no other column
+
+
+Executing 
+print (function()) 
+
+will give you the results of the function i.e what the function does
+
+In order to read the sqlite.py file, all you have to do is run the sqlite3 file in your terminal
+All the dependencies and required libraries are imported in this file 
